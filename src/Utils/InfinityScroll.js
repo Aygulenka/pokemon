@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import  { useEffect } from "react";
 
 const CheckPosition = ({ onFetchData, pokemonId }) => {
   useEffect(() => {
@@ -25,7 +25,6 @@ const CheckPosition = ({ onFetchData, pokemonId }) => {
       window.removeEventListener('resize', throttledCheckPosition);
     };
   }, [onFetchData, pokemonId]);
-
   function throttle(callee, timeout) {
     let timer = null;
 
