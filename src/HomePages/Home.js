@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import pica from './pictures/pica.jpg';
-import ivi from './pictures/ivi.jpg'
-import muty from './pictures/muty.png'
+import pica from '../pictures/pica-removebg-preview.png';
+import ivi from '../pictures/ivi-removebg-preview.png'
+import muty from '../pictures/muty.png'
 import './pika.css';
-import pokemon from './pictures/pokemon.png'
+
 
 const Home = () => {
   const [showPica, setShowPica] = useState(true);
@@ -28,16 +28,13 @@ const Home = () => {
         </div>
       )}
       {!showPica && (
-        <>
-        <Link to="/pokemonList">
-        <img src={pokemon} className='centre-pokemon' alt='text' />
-      </Link>
+         <div className='containerHome'>
         <img src={ivi} alt="ivi" className='left'/>
-        <img src={muty} alt="muty" className='right'/>
         <div className='center-image'>
           <Link to="/pokemonList">ХОЧУ БОЛЬШЕ ПОКЕМОНОВ</Link>
         </div>
-        </>
+        <img src={muty} alt="muty" className='right'/>
+        </div>
       )}
     </div>
   );

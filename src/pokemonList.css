@@ -1,0 +1,102 @@
+/* .pokemonList{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    max-width: 98%;
+    align-items: flex-start; 
+} */
+/* fonts.css */
+.flex{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+@font-face {
+    font-family: 'pokName'; /* Установите имя шрифта */
+    src: url('./DisneyPark.ttf') format('truetype'); /* Путь к вашему файлу TTF */
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+.group-pok{
+    max-width: 200px;
+    border: 1px solid gray;
+    padding: 10px;
+    margin: 10px;
+}
+
+ul{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    max-width: 98%;
+    align-items: flex-start;
+    list-style-type: none; /* Убираем маркеры списка */
+    padding: 0 50px 50px 50px;
+}
+
+  .group-pok li {
+    border: 1px solid #ddd; /* Добавляем рамку вокруг каждого покемона */
+    padding: 10px; /* Добавляем внутренний отступ для каждого покемона */
+    margin: 10px; /* Добавляем отступ между элементами списка */
+  }
+  
+  .group-pok img {
+    max-width: 70px; /* Ограничиваем ширину изображения для сохранения макета */
+    height: auto; /* Позволяет изображению подстраиваться под ограничение ширины */
+  }
+  
+  /* .hover-effect-scale p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 0.3s;
+    max-height: 150px;
+    margin: 0;
+  }
+  
+  .hover-effect-scale:hover p {
+    position: absolute;
+    background-color: white;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 1;
+  } */
+  .centre-pokemon{
+    height: 200px;
+  }
+  .pokemonName {
+    font-family: 'pokName', sans-serif;
+    font-size: 45px; 
+    color: #333; 
+    text-align: center;
+    margin: 0;
+  }
+  .pokemonType{
+    margin-left: 5px;
+  }
+  .pokemonPhoto{
+    text-align: center;
+  }
+  @media screen and (max-width: 600px) {
+    ul{
+      padding: 0px 0 50px 0;
+    }
+    .group-pok{
+        max-width: 150px;
+        margin:5px 0 ;
+
+    }
+    .group-pok li {
+        border: 1px solid #ddd; 
+        padding: 0; 
+        margin: 0; 
+      }
+  }
