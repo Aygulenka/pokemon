@@ -33,7 +33,7 @@ const PaginationButton = ({ onPageChange, pokemonId, onFetchData}) => {
   return (
     <div className='example'>
       <div className='text' onClick={handlePrevClick}>
-        previous project
+        previous page
       </div>
       <div className='counter'>
         <span className='number'>{String(currentPage).padStart(2, '0')}</span>
@@ -41,7 +41,7 @@ const PaginationButton = ({ onPageChange, pokemonId, onFetchData}) => {
         <span className='number'>131</span>
       </div>
       <div className='text' onClick={handleNextClick}>
-        next project
+        next page
       </div>
     </div>
   );
