@@ -1,7 +1,6 @@
 import React from 'react';
-import { Image, Pagination } from 'antd';
+import { Image } from 'antd';
 import './pokemonList.css';
-import PaginationButton from './Hooks/PaginationButton';
 
 const ListPokemons = ({ pokemonList }) => {
   return (
@@ -78,7 +77,6 @@ const ListPokemons = ({ pokemonList }) => {
           )}
         </ul>
       </div>
-      {/* <PaginationButton/> */}
     </div>
   );
 };

@@ -1,10 +1,9 @@
 import { Routes, Route } from 'react-router-dom';
 import './App.css';
 
-import Home from './HomePages/Home';
-import ListPokemons from './ListPokemons';
-import GetPokemons from './GetPokemons';
-import Header from './Header';
+import Home from './Pages/Home';
+import GetPokemons from './Components/GetPokemons';
+import Header from './Pages/Header';
 
 function App() {
   return (

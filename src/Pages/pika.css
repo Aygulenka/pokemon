@@ -1,6 +1,7 @@
   
   .slide-in-out {
     animation: slideInOut 6s ease-in-out forwards;
+    height: 500px;
   }
 
   .containerHome{
@@ -29,11 +30,14 @@
   }
   
  .center-pica {
+  height: 100vh;
+  min-height: 100%;
     /* position: absolute; */
     display: flex;
     /* width: 100%; */
     /* align-content: center; */
-    justify-content: flex-start;
+
+    justify-content: center;
     text-align: center;
   } 
  @media screen and (max-width: 970px) {
@@ -46,16 +50,16 @@
   }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 560px) {
   .containerHome{
    max-width: 250px;
   }
-  /* .left{
+  .left{
     max-width: 200px;
     margin:0
   } 
   .center-image{
     max-width: 60px;
-  } */
+  }
 }
 

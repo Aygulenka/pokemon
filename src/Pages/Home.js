@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import pica from '../pictures/pica-removebg-preview.png';
-import ivi from '../pictures/ivi-removebg-preview.png'
-import muty from '../pictures/muty.png'
+import pica from '../Assets/Pictures/pica-removebg-preview.png';
+import ivi from '../Assets/Pictures/ivi-removebg-preview.png'
+import muty from '../Assets/Pictures/muty.png'
 import './pika.css';
 
 

@@ -1,8 +1,8 @@
 import React from 'react';
 import { Link, useNavigate, useLocation } from 'react-router-dom';
 import './pokemonList.css';
-import pokemon from './pictures/pokemon-removebg-preview.png';
-import SwitchButton from './Hooks/SwitchButton';
+import pokemon from '../Assets/Pictures/pokemon-removebg-preview.png';
+import SwitchButton from '../Utils/SwitchButton';
 
 const Header = () => {
   const navigate = useNavigate();

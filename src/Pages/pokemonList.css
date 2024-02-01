@@ -1,12 +1,4 @@
-/* .pokemonList{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    max-width: 98%;
-    align-items: flex-start; 
-} */
-/* fonts.css */
+
 .flex{
   display: flex;
   flex-direction: row;
@@ -16,7 +8,7 @@
 
 @font-face {
     font-family: 'pokName'; /* Установите имя шрифта */
-    src: url('./DisneyPark.ttf') format('truetype'); /* Путь к вашему файлу TTF */
+    src: url('../Assets/DisneyPark.ttf') format('truetype'); /* Путь к вашему файлу TTF */
     font-weight: normal;
     font-style: normal;
   }
@@ -50,25 +42,6 @@ ul{
     height: auto; /* Позволяет изображению подстраиваться под ограничение ширины */
   }
   
-  /* .hover-effect-scale p {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    opacity: 0;
-    transition: opacity 0.3s;
-    max-height: 150px;
-    margin: 0;
-  }
-  
-  .hover-effect-scale:hover p {
-    position: absolute;
-    background-color: white;
-    top: 15%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    opacity: 1;
-  } */
   .centre-pokemon{
     height: 200px;
   }

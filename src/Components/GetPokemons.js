@@ -1,11 +1,10 @@
-// GetPokemons.js
 
 import React, { useEffect, useState } from 'react';
-import ListPokemons from './ListPokemons';
-import { fetchData } from './RequestPokemon';
-import CheckPosition from './Hooks/InfinityScroll';
-import PaginationButton from './Hooks/PaginationButton';
-import { useSwitchContext } from './Hooks/SwithContext';
+import ListPokemons from '../Pages/ListPokemons';
+import { fetchData } from '../Assets/RequestPokemon';
+import CheckPosition from '../Utils/InfinityScroll';
+import PaginationButton from '../Utils/PaginationButton';
+import { useSwitchContext } from '../Utils/SwithContext';
 // import { usePaginationContext } from './Hooks/PaginationContext';
 
 const GetPokemons = () => {
@@ -32,7 +31,7 @@ const GetPokemons = () => {
   const fetchMoreDataForPagination = async (startId) => {
     try {
       const updatedPokemonList = await fetchData(startId, 20);
-      // Очищаем предыдущий массив и устанавливаем новые данные
+      //заменяем
       setPokemonList(updatedPokemonList);
       setDataLoaded(true);
     } catch (error) {
@@ -43,7 +42,7 @@ const GetPokemons = () => {
   const fetchMoreDataForScroll = async (startId) => {
     try {
       const updatedPokemonList = await fetchData(startId, 20);
-      // Добавляем новые данные к предыдущим
+      // подгружаем 
       setPokemonList(prevList => [...prevList, ...updatedPokemonList]);
     } catch (error) {
       console.error('Произошла ошибка при загрузке данных:', error);
